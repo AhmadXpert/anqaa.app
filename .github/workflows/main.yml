@@ -23,8 +23,8 @@ jobs:
           pip install buildozer cython==0.29.32
 
       - name: Accept SDK Licenses
-  run: |
-    yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
+        run: |
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
     
 
       - name: Build with Buildozer
